@@ -19,5 +19,5 @@
 #### Can compute fibonacci up to 40 with variable y and z inputs.
 #### _____
 ### Combine the Two
-#### Combined Fizzbuzz and Fibanacci delux with the option to change the words for Fizz and Buzz as well as the ability to change which multiples Fizz and Buzz are called on via variables A and B respectively.
+#### Combined Fizzbuzz and Fibanacci delux up to 40 with the option to change the words for Fizz and Buzz as well as the ability to change which multiples Fizz and Buzz are called on via variables A and B respectively.
 #### _____

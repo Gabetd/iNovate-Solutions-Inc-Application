@@ -9,9 +9,9 @@ import React, { useState } from 'react';
 
     let seq = [1, 1];
     while (seq.length < length) {
-        let last = seq[seq.length - y] || 1;
-        let secondLast = seq[seq.length - z] || 1;
-        let next = last + secondLast;
+      let last = seq[seq.length - y] || 0;
+      let secondLast = seq[seq.length - z] || 0;
+      let next = (last + secondLast) || 1;
         seq.push(next);
     }
     return seq;

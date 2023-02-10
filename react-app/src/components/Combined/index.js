@@ -9,9 +9,9 @@ function CombinedSequence(length, y = 1, z = 2, fizz = 'Fizz', buzz = 'Buzz', a 
   let seq = [1, 1];
   let seq2 = [1, 1];
   while (seq.length < length) {
-      let last = seq2[seq.length - y] || 1;
-      let secondLast = seq2[seq.length - z] || 1;
-      let next = last + secondLast;
+      let last = seq2[seq.length - y] || 0;
+      let secondLast = seq2[seq.length - z] || 0;
+      let next = (last + secondLast) || 1;
       if(next % a === 0 && next % b === 0){seq.push(`${fizz}${buzz}`); seq2.push(next)}
       else if(next % b === 0){seq.push(`${buzz}`); seq2.push(next)}
       else if(next % a === 0){seq.push(`${fizz}`); seq2.push(next)}
